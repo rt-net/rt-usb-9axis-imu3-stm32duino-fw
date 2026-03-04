@@ -8,7 +8,7 @@ The file RT-9DOF-IMU-V3-Quat.ino is forked from the [SparkFun_ICM-20948_ArduinoL
 ## Flashing from the Arduino IDE
 
 ### Setting Up Dependencies
-* Please refer to [SparkFun_ICM-20948_ArduinoLibrary] and install the library.
+* Please refer to [SparkFun_ICM-20948_ArduinoLibrary](https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary) and install the library.
   * Operation has been confirmed only with version 1.2.5.
 
 ### Setting Up STM32duino
