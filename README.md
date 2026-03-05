@@ -40,4 +40,5 @@ Start the device in BOOT mode (please power it on while holding the switch).
 Power on the device in boot mode and proceed with flashing the firmware.
 
 ## Flashing the Binary
-TODO
+Please download the binary to be flashed from the [releases page](https://github.com/rt-net/rt-usb-9axis-imu3-stm32duino-fw/releases).
+Please flash it using STM32CubeProg.
