@@ -21,7 +21,7 @@
  * ** If you are using Windows, you can find ICM_20948_C.h in:
  * ** Documents\Arduino\libraries\SparkFun_ICM-20948_ArduinoLibrary\src\util
  *
- * Please see License.md for the license information.
+ * Please see LICENCE for the license information.
  *
  * Distributed as-is; no warranty is given.
  ***************************************************************/
