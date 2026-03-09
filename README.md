@@ -10,6 +10,14 @@ The file RT-9DOF-IMU-V3-Quat.ino is forked from the [SparkFun_ICM-20948_ArduinoL
 ### Setting Up Dependencies
 * Please refer to [SparkFun_ICM-20948_ArduinoLibrary](https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary) and install the library.
   * Operation has been confirmed only with version 1.2.5.
+#### Enable DMP functionality
+* By default the DMP functionality is disabled in the library as the DMP firmware takes up 14301 Bytes of program memory.
+* To use the DMP, you will need to:
+  * Edit ICM_20948_C.h
+  * Uncomment line 29: #define ICM_20948_USE_DMP
+  * Save changes
+  * If you are using Windows, you can find ICM_20948_C.h in:
+  * Documents\Arduino\libraries\SparkFun_ICM-20948_ArduinoLibrary\src\util
 
 ### Setting Up STM32duino
 Please add the following URL to "File" → "Preferences" → "Additional Boards Manager URLs":
