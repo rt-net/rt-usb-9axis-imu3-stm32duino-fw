@@ -76,9 +76,12 @@ void timerInterrupt(void) {
       double gy = ((double)data.Raw_Gyro.Data.Y) / 16.3835 * PI / 180.0;
       double gz = ((double)data.Raw_Gyro.Data.Z) / 16.3835 * PI / 180.0;
 
-      double time = (double)micros() / 1000000.0;
+      uint32_t time_sec = micros()/1000000;
+      uint32_t time_subsecs = micros() - time_sec*1000000;
 
-      SERIAL_PORT.print(time, 4);
+      SERIAL_PORT.print(time_sec);
+      SERIAL_PORT.print(F("."));
+      SERIAL_PORT.print(time_subsecs);
       SERIAL_PORT.print(F(","));
       SERIAL_PORT.print(q1, 4);
       SERIAL_PORT.print(F(","));
