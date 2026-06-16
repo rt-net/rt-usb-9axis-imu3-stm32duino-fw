@@ -92,19 +92,19 @@ void timerInterrupt(void)
 
       // data
       raw_data[7] = time_stamp++;
-      raw_data[8] = (data.Raw_Accel.Data.X >> 8) & 0xFF;
-      raw_data[9] = (data.Raw_Accel.Data.X) & 0xFF;
-      raw_data[10] = (data.Raw_Accel.Data.Y >> 8) & 0xFF;
-      raw_data[11] = (data.Raw_Accel.Data.Y) & 0xFF;
-      raw_data[12] = (data.Raw_Accel.Data.Z >> 8) & 0xFF;
-      raw_data[13] = (data.Raw_Accel.Data.Z) & 0xFF;
+      raw_data[8] = (data.Raw_Accel.Data.X >> 0) & 0xFF;
+      raw_data[9] = (data.Raw_Accel.Data.X >> 8) & 0xFF;
+      raw_data[10] = (data.Raw_Accel.Data.Y >> 0) & 0xFF;
+      raw_data[11] = (data.Raw_Accel.Data.Y >> 8) & 0xFF;
+      raw_data[12] = (data.Raw_Accel.Data.Z >> 0) & 0xFF;
+      raw_data[13] = (data.Raw_Accel.Data.Z >> 8) & 0xFF;
 
-      raw_data[14] = (data.Raw_Gyro.Data.X >> 8) & 0xFF;
-      raw_data[15] = (data.Raw_Gyro.Data.X) & 0xFF;
-      raw_data[16] = (data.Raw_Gyro.Data.Y >> 8) & 0xFF;
-      raw_data[17] = (data.Raw_Gyro.Data.Y) & 0xFF;
-      raw_data[18] = (data.Raw_Gyro.Data.Z >> 8) & 0xFF;
-      raw_data[19] = (data.Raw_Gyro.Data.Z) & 0xFF;
+      raw_data[14] = (data.Raw_Gyro.Data.X >> 0) & 0xFF;
+      raw_data[15] = (data.Raw_Gyro.Data.X >> 8) & 0xFF;
+      raw_data[16] = (data.Raw_Gyro.Data.Y >> 0) & 0xFF;
+      raw_data[17] = (data.Raw_Gyro.Data.Y >> 8) & 0xFF;
+      raw_data[18] = (data.Raw_Gyro.Data.Z >> 0) & 0xFF;
+      raw_data[19] = (data.Raw_Gyro.Data.Z >> 8) & 0xFF;
 
       raw_data[20] = (data.Quat6.Data.Q1 >> 0) & 0xFF;
       raw_data[21] = (data.Quat6.Data.Q1 >> 8) & 0xFF;
