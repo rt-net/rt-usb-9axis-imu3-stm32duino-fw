@@ -76,7 +76,10 @@ void timerInterrupt(void) {
 
   if ((myICM.status == ICM_20948_Stat_Ok) || (myICM.status == ICM_20948_Stat_FIFOMoreDataAvail))  // Was valid data available?
   {
-    if ((data.header & DMP_header_bitmap_Quat6) > 0)  // && (data.header & DMP_header_bitmap_Gyro) > 0)
+    if (
+      ((data.header & DMP_header_bitmap_Quat6) > 0) &&
+      ((data.header & DMP_header_bitmap_Gyro) > 0) &&
+      ((data.header & DMP_header_bitmap_Accel) > 0)) 
     {
       // header
       raw_data[0] = 0xff;        // header1
